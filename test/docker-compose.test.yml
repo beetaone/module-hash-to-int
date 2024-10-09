@@ -4,7 +4,7 @@ networks:
         name: sha256_to_integer_network
 services:
     # dev_random:
-    #     image: weevenetwork/dev-random:v1.0.0
+    #     image: beetaone/dev-random:v1.0.0
     #     environment:
     #         MODULE_NAME: "dev-random"
     #         MODULE_TYPE: "Input"
@@ -55,4 +55,4 @@ services:
             - 9001:9001
         volumes:
             - $PWD/test/artifacts:/app/artifacts/
-        container_name: listener2
+        container_name: listener2ner2

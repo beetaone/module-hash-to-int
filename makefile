@@ -1,6 +1,6 @@
 SHELL := /bin/bash # to enable source command in run_app
 
-MODULE=weevenetwork/hash-to-int
+MODULE=beetaone/hash-to-int
 VERSION_NAME=v1.0.1
 
 install_dev:
@@ -47,5 +47,5 @@ push_latest:
 
 create_and_push_multi_platform:
 	docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v6,linux/arm/v7 -t ${MODULE}:${VERSION_NAME} --push . -f docker/Dockerfile
-.phony: create_and_push_multi_platform
+.phony: create_and_push_multi_platformform
 

@@ -4,8 +4,8 @@
 | ------------ | ----------------------------------------------------------------------------------------- |
 | name         | hash-to-int                                                                         |
 | version      | v1.0.1                                                                                    |
-| docker image | [weevenetwork/hash-to-int](https://hub.docker.com/r/weevenetwork/hash-to-int) |
-| tags         | Python, Flask, Docker, Weeve                                                              |
+| docker image | [beetaone/hash-to-int](https://hub.docker.com/r/beetaone/hash-to-int) |
+| tags         | Python, Flask, Docker, beetaone                                                              |
 | authors      | Marcus Jones                                                                              |
 
 # Developers
@@ -60,7 +60,7 @@ docker run --rm \
      -e INGRESS_PORT=9001 \
      -e INGRESS_PATH="/" \
      --name sha256-to-integer \
-     weevenetwork/sha256-to-integer
+     beetaone/sha256-to-integer
 ```
 
 In the third terminal, simulate the ingress side of the container by sending a hash value from the host into the docker network forwarded port;
@@ -86,4 +86,4 @@ Where `<sha 256 hash>` is a SHA 256 hash represented by a hex string such as;
 
 The module will return the integer representation of this byte string in the following form;
 
-`{'256 byte integer':'<int>'}`
+`{'256 byte integer':'<int>'}`'<int>'}`
